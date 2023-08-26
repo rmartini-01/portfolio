@@ -49,7 +49,7 @@ const Projects = () => {
 
   ];
   return (
-    <section id="projects" className=" w-full h-screen mb-4">
+    <section id="projects" className=" w-full  mb-4">
       <h1 className="text-white text-center text-4xl font-bold mb-4"> Projects</h1>
         <p className="text-xl bg-gray-600 p-5 rounded-lg mb-4"> &#x26A0; This is a preview of some of the projects I have done during my studies. I have worked on other projects making me gain skill in other programming languages, frameworks and tool, that I unfortunately cannot share with you just yet...  </p>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
