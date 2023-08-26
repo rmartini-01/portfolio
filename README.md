@@ -2,7 +2,7 @@
 My portfolio in development using NextJS, React and Tailwind 
 
 # Installation 
-when in my-portfolio directory, run : 
+when in portfolio directory, run : 
 `npm install`
 then : 
 `npm run dev`
