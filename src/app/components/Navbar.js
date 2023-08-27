@@ -11,22 +11,22 @@ const Navbar = () => {
         </a>
         <ul className="flex space-x-4">
           <li>
-            <a href="#" className="text-white hover:text-purple-400">
+            <a href="#" className="text-white hover:text-purple-500">
               Home
             </a>
           </li>
           <li>
-            <a href="#about-me" className="text-white hover:text-purple-400">
+            <a href="#about-me" className="text-white hover:text-purple-500">
               About
             </a>
           </li>
           <li>
-            <a href="#projects" className="text-white hover:text-purple-400">
+            <a href="#projects" className="text-white hover:text-purple-500">
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact" className="text-white hover:text-purple-400">
+            <a href="#contact" className="text-white hover:text-purple-500">
               Contact
             </a>
           </li>

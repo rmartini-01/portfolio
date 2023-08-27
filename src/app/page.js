@@ -3,13 +3,17 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./components/About-me";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import WorkWithMe from "./components/WorkWithMe";
+import SliderComponent from "./components/SliderComponent";
+import VideoBackground from "./components/VideoBackground";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className=" min-h-screen items-center justify-between ">
       <AboutMe />
       <Projects />
       <Skills />
+      <WorkWithMe />
     </main>
   );
 }

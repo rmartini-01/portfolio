@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ProjectCard from "./ProjectCard";
+import VideoBackground from "./VideoBackground";
 const Projects = () => {
   const projects = [
     {
@@ -20,7 +21,7 @@ const Projects = () => {
     {
       name: "Recettes de cocktails",
       image: "/recettes.png",
-      description: "The perfect website for your cocktails recipes !",
+      description: "The perfect website for your cocktails recipes!",
       tech: "PHP - SQL - HTML - CSS -  ",
       githubLink: "https://github.com/rmartini-01/cocktails",
     },
@@ -46,18 +47,28 @@ const Projects = () => {
       tech: "Java - Swing",
       githubLink: "https://github.com/rmartini-01/energy",
     },
-
   ];
   return (
-    <section id="projects" className=" w-full  mb-4">
-      <h1 className="text-white text-center text-4xl font-bold mb-4"> Projects</h1>
-        <p className="text-xl bg-gray-600 p-5 rounded-lg mb-4"> &#x26A0; This is a preview of some of the projects I have done during my studies. I have worked on other projects making me gain skill in other programming languages, frameworks and tool, that I unfortunately cannot share with you just yet...  </p>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+   
+
+    <div id="projects" className="relative w-full min-h-screen bg-gray-100  font-custom p-24">
+      <div className="relative z-10 ">
+        <p className="text-lg glassEffect p-5 rounded-lg mb-4">
+          &#x26A0; This is a preview of some of the projects I have done during
+          my studies. I have worked on other projects making me gain skills not
+          only in other programming languages, frameworks and tools, but also in
+          methodology, teamwork and productivity. I am currently working on some
+          new projects that I unfortunately cannot share with you just yet...{" "}
+        </p>
+
+        <div className=" realtive grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
       </div>
-    </section>
+      <VideoBackground />
+    </div>
   );
 };
 
