@@ -37,3 +37,7 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+
+.gradient-purple{
+  background: linear-gradient(270deg, #000 0%, #120540 100%);
+}

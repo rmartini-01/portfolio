@@ -14,12 +14,12 @@ const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="w-full h-screen flex flex-row justify-between  mt-16 p-24"
+      className="w-full flex flex-row justify-between   p-24 gradient-purple"
     >
       <div className=" absolute left-13 top-10 md:top-14 lg:top-16">
         <WorkingIcon />
       </div>
-      <div className="flex flex-col justify-center gap-5 z-10">
+      <div className="flex flex-col justify-center pt-40 gap-5 mt-16 z-10">
         <p className="text-2xl md:text-4xl font-bold text-left font-custom">
           Hey, I'm Reen Martini
         </p>
@@ -43,7 +43,7 @@ const AboutMe = () => {
             alt="Description of the image"
             width={300} // Desired width of the image
             height={250} // Desired height of the image
-            style={{ borderRadius: "20px", width: "100%" }} // Adjust the radius value as needed
+            style={{ borderRadius: "20px", minWidth: "100%" , maxWidth:"100%"}} // Adjust the radius value as needed
           />
         </div>
       </div>

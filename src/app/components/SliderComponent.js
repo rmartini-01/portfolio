@@ -20,7 +20,7 @@ const SliderComponent = () => {
   };
 
   return (
-      <Slider {...settings} className="w-full  p-32 font-custom  z-20">
+      <Slider {...settings} className="w-full p-12 md:p-32 font-custom  z-20">
         {/* First Slide */}
         <div className=" text-white text-left z-20 ">
           <div className=" flex flex-col justify-between">
