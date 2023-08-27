@@ -31,7 +31,7 @@ const WorkWithMe = () => {
         </button>
         <button className="flex gap-4 items-center bg-gray-700 font-custom hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg">
           <GithubSVG />
-          <a href="www.github.com/rmartini-01"> Find me on Github</a>
+          <a href="https://www.github.com/rmartini-01"> Find me on Github</a>
         </button>
 
         <button className="flex gap-4 items-center bg-white hover:bg-gray-100 font-custom text-black font-bold py-2 px-4 rounded-lg">
