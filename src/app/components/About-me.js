@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import WorkingIcon from "../../../public/workingIcon";
+import { useTranslation, withTranslation } from "react-i18next";
 
 const handleButtonClick = () => {
   // Open the default email client with a pre-filled email
@@ -11,6 +12,8 @@ const handleButtonClick = () => {
 };
 
 const AboutMe = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <section
       id="about-me"
@@ -24,18 +27,19 @@ const AboutMe = () => {
         <div className="flex md:flex-row gap-5 flex-col items-center ">
           <div className="pt-40 gap-2 mt-16 z-10 ">
             <p className="text-2xl md:text-4xl font-bold text-center md:text-left font-custom mb-2">
-              Hey, I'm Reen Martini
+              {t("Hey, I'm Reen Martini")}
             </p>
             <p className="text-lg md:text-xl md:text-left text-center font-custom flex flex-col items-center gap-5 md:flex-row">
-              I'm about to graduate from the University of Paris Cité with a
-              Master's degree in Computer Science - Languages & Programming.
+              {t(
+                "I'm about to graduate from the University of Paris Cité with a Master's degree in Computer Science - Languages & Programming."
+              )}
               <br />
             </p>
           </div>
 
           <Image
             src="/me.jpg" // Path to your image in the public directory
-            alt="Description of the image"
+            alt="Reen MARTINI"
             width={250} // Desired width of the image
             height={200} // Desired height of the image
             style={{
@@ -47,11 +51,11 @@ const AboutMe = () => {
           className="bg-purple-500 w-fit p-4 rounded-xl hover:bg-purple-600 "
           onClick={handleButtonClick}
         >
-          Work with me
+          {t("Work with me")}
         </button>
       </div>
     </section>
   );
 };
 
-export default AboutMe;
+export default withTranslation()(AboutMe);

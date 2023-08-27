@@ -1,42 +1,44 @@
-"use client"; 
-import React, {useState} from "react";
+"use client";
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import Modal from "./Modal";
 import VideoBackground from "./VideoBackground";
+import { useTranslation, withTranslation } from "react-i18next";
 const Projects = () => {
+  const { t, i18n } = useTranslation();
   const projects = [
     {
       name: "NaviNinja",
       image: "/navininja.png",
-      description: "Find your itinerary !",
+      description: t("Find your itinerary !"),
       tech: "Java - JavaFX - IntelliJ - SceneBuilder",
       githubLink: "#",
     },
     {
       name: "Twisk",
       image: "/twisk.png",
-      description: "What if we looked at the world ?",
+      description: t("What if we looked at the world ?"),
       tech: "Java - JavaFX - C - IntelliJ ",
       githubLink: "https://github.com/rmartini-01/twisk",
     },
     {
       name: "Recettes de cocktails",
       image: "/recettes.png",
-      description: "The perfect website for your cocktails recipes!",
+      description: t("The perfect website for your cocktails recipes!"),
       tech: "PHP - SQL - HTML - CSS ",
       githubLink: "https://github.com/rmartini-01/cocktails",
     },
     {
       name: "SpaceJump",
       image: "/spaceJump.png",
-      description: "Game inspired by Doodle Jump ",
+      description: t("Game inspired by Doodle Jump "),
       tech: "C - SDL2 ",
       githubLink: "https://github.com/rmartini-01/spaceJump",
     },
     {
       name: "ShareCount",
       image: "/sharecount.png",
-      description: "Money pot manager",
+      description: t("Money pot manager"),
       tech: "C++ - QtCreator",
       githubLink: "https://github.com/rmartini-01/sharecount",
     },
@@ -44,7 +46,7 @@ const Projects = () => {
     {
       name: "Energy ",
       image: "/energy.png",
-      description: "Lights up",
+      description: t("Lights up"),
       tech: "Java - Swing",
       githubLink: "https://github.com/rmartini-01/energy",
     },
@@ -62,24 +64,28 @@ const Projects = () => {
     >
       <div className="relative z-10 ">
         <p className="text-lg glassEffect p-2 md:p-5  rounded-lg mb-4">
-          &#x26A0; This is a preview of some of the projects I have done during
-          my studies. I have worked on other projects making me gain skills not
-          only in other programming languages, frameworks and tools, but also in
-          methodology, teamwork and productivity. I am currently working on some
-          new projects that I unfortunately cannot share with you just yet...{" "}
+          &#x26A0;{" "}
+          {t(
+            "This is a preview of some of the projects I have done during my studies. I have worked on other projects making me gain skills not only in other programming languages, frameworks and tools, but also in methodology, teamwork and productivity. I am currently working on some new projects that I unfortunately cannot share with you just yet..."
+          )}{" "}
         </p>
 
         <div className=" realtive grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project}  onDemoButtonClick={toggleModal}/>
+            <ProjectCard
+              key={index}
+              project={project}
+              onDemoButtonClick={toggleModal}
+            />
           ))}
 
           {showModal && (
             <Modal onClose={toggleModal}>
               <h2 className="text-xl font-semibold mb-4">Oops...</h2>
               <p className="mb-2">
-                I can't share this repository, but here's a video presentation
-                of the app :)
+                {t(
+                  "I can't share this repository, but here's a video presentation of the app :)"
+                )}
               </p>
               <video controls className="max-w-[50%] h-auto">
                 <source src="/Navininja.mp4" type="video/mp4" />
@@ -94,4 +100,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default withTranslation()(Projects);
