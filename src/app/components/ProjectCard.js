@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Modal from "./Modal";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, onDemoButtonClick  }) => {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -52,23 +52,10 @@ const ProjectCard = ({ project }) => {
         ) : (
           <button
             className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"
-            onClick={toggleModal}
+            onClick={onDemoButtonClick}
           >
             Demo
           </button>
-        )}
-        {showModal && (
-          <Modal onClose={toggleModal}>
-            <h2 className="text-xl font-semibold mb-4">Oops...</h2>
-            <p className="mb-2">
-              I can't share this repository, but here's a
-              video presentation of the app :)
-            </p>
-            <video controls className="max-w-[50%] h-auto">
-              <source src="/Navininja.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Modal>
         )}
       </div>
     </div>

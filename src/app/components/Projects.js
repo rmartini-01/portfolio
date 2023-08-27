@@ -1,6 +1,8 @@
-import React from "react";
+"use client"; 
+import React, {useState} from "react";
 import Image from "next/image";
 import ProjectCard from "./ProjectCard";
+import Modal from "./Modal";
 import VideoBackground from "./VideoBackground";
 const Projects = () => {
   const projects = [
@@ -48,10 +50,17 @@ const Projects = () => {
       githubLink: "https://github.com/rmartini-01/energy",
     },
   ];
-  return (
-   
 
-    <div id="projects" className="relative w-full min-h-screen bg-gray-100  font-custom p-24">
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+  return (
+    <div
+      id="projects"
+      className="relative w-full min-h-screen bg-gray-100  font-custom p-24"
+    >
       <div className="relative z-10 ">
         <p className="text-lg glassEffect p-5 rounded-lg mb-4">
           &#x26A0; This is a preview of some of the projects I have done during
@@ -63,8 +72,22 @@ const Projects = () => {
 
         <div className=" realtive grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+            <ProjectCard key={index} project={project}  onDemoButtonClick={toggleModal}/>
           ))}
+
+          {showModal && (
+            <Modal onClose={toggleModal}>
+              <h2 className="text-xl font-semibold mb-4">Oops...</h2>
+              <p className="mb-2">
+                I can't share this repository, but here's a video presentation
+                of the app :)
+              </p>
+              <video controls className="max-w-[50%] h-auto">
+                <source src="/Navininja.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </Modal>
+          )}
         </div>
       </div>
       <VideoBackground />
