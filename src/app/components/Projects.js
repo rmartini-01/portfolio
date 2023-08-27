@@ -58,10 +58,10 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="relative w-full min-h-screen bg-gray-100  font-custom p-24"
+      className="relative w-full min-h-screen bg-gray-100  font-custom p-12  md:p-24"
     >
       <div className="relative z-10 ">
-        <p className="text-lg glassEffect p-5 rounded-lg mb-4">
+        <p className="text-lg glassEffect p-2 md:p-5  rounded-lg mb-4">
           &#x26A0; This is a preview of some of the projects I have done during
           my studies. I have worked on other projects making me gain skills not
           only in other programming languages, frameworks and tools, but also in

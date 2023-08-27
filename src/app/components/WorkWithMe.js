@@ -42,12 +42,22 @@ const WorkWithMe = () => {
         </button>
         <button className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg">
           <a
-            href="/CV.pdf" // Replace with the actual path to your PDF file
+            href="/frCV.pdf" // Replace with the actual path to your PDF file
             download="ReenMARTINI-CV.pdf" // Specify the desired file name for the downloaded PDF
             className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg"
           >
             <IconFilePdf />
-            Download my resume
+            French resume
+          </a>
+        </button>
+        <button className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg">
+          <a
+            href="/enCV.pdf" // Replace with the actual path to your PDF file
+            download="ReenMARTINI-CV.pdf" // Specify the desired file name for the downloaded PDF
+            className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg"
+          >
+            <IconFilePdf />
+            English resume
           </a>
         </button>
       </div>

@@ -14,38 +14,41 @@ const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="w-full flex flex-row justify-between   p-24 gradient-purple"
+      className="w-full flex flex-row justify-between p-12 md:p-24 gradient-purple md:flex-col"
     >
-      <div className=" absolute left-13 top-10 md:top-14 lg:top-16">
+      <div className=" absolute left-7 md:left-13 top-10 md:top-14 lg:top-16">
         <WorkingIcon />
       </div>
-      <div className="flex flex-col justify-center pt-40 gap-5 mt-16 z-10">
-        <p className="text-2xl md:text-4xl font-bold text-left font-custom">
-          Hey, I'm Reen Martini
-        </p>
-        <p className="text-lg md:text-xl text-left font-custom">
-          I'm about to graduate from the University of Paris Cité with a
-          Master's degree in Computer Science - Languages & Programming. I'm
-          looking forward to all the new opportunities that will come my way!
-        </p>
+      {/* <div className="flex flex-col justify-center pt-40 gap-2 mt-16 z-10"> */}
+      <div className="flex flex-col gap-5 items-center  md:items-start">
+        <div className="flex md:flex-row gap-5 flex-col items-center ">
+          <div className="pt-40 gap-2 mt-16 z-10 ">
+            <p className="text-2xl md:text-4xl font-bold text-left font-custom">
+              Hey, I'm Reen Martini
+            </p>
+            <p className="text-lg md:text-xl text-left font-custom flex flex-col items-center gap-5 md:flex-row">
+              I'm about to graduate from the University of Paris Cité with a
+              Master's degree in Computer Science - Languages & Programming.
+              <br />
+            </p>
+          </div>
+
+          <Image
+            src="/me.jpg" // Path to your image in the public directory
+            alt="Description of the image"
+            width={250} // Desired width of the image
+            height={200} // Desired height of the image
+            style={{
+              borderRadius: "20px",
+            }} // Adjust the radius value as needed
+          />
+        </div>
         <button
           className="bg-purple-500 w-fit p-4 rounded-xl hover:bg-purple-600 "
           onClick={handleButtonClick}
         >
           Work with me
         </button>
-      </div>
-      {/* Rest of your page content */}
-      <div className="flex justify-center items-center">
-        <div style={{ maxWidth: "100%", textAlign: "center" }}>
-          <Image
-            src="/me.jpg" // Path to your image in the public directory
-            alt="Description of the image"
-            width={300} // Desired width of the image
-            height={250} // Desired height of the image
-            style={{ borderRadius: "20px", minWidth: "100%" , maxWidth:"100%"}} // Adjust the radius value as needed
-          />
-        </div>
       </div>
     </section>
   );
