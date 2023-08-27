@@ -4,6 +4,7 @@ import EmailSVG from "../../../public/emailIcon";
 import GithubSVG from "../../../public/githubIcon";
 import LinkedInSVG from "../../../public/linkedInIcon";
 import IconFilePdf from "../../../public/pdfIcon";
+import { useTranslation, withTranslation } from "react-i18next";
 
 const handleButtonClick = () => {
   // Open the default email client with a pre-filled email
@@ -12,10 +13,12 @@ const handleButtonClick = () => {
 };
 
 const WorkWithMe = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div id="contact" className="w-full justify-between items-center mb-24  ">
       <h2 className="text-4xl text-white text-center font-bold mt-10 m-4 font-custom">
-        Work with me !
+        {t("Work with me")}
       </h2>
 
       <div
@@ -27,7 +30,7 @@ const WorkWithMe = () => {
           onClick={handleButtonClick}
         >
           <EmailSVG />
-          Send me an email
+          {t("Send me an email")}
         </button>
         <button className="flex gap-4 items-center bg-gray-700 font-custom hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg">
           <GithubSVG />
@@ -37,32 +40,36 @@ const WorkWithMe = () => {
         <button className="flex gap-4 items-center bg-white hover:bg-gray-100 font-custom text-black font-bold py-2 px-4 rounded-lg">
           <LinkedInSVG />
           <a href="https://www.linkedin.com/in/reen-martini-44b84917b/">
-            Find me on LinkedIn
+            {t("Find me on LinkedIn")}
           </a>
         </button>
-        <button className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg">
-          <a
-            href="/frCV.pdf" // Replace with the actual path to your PDF file
-            download="ReenMARTINI-CV.pdf" // Specify the desired file name for the downloaded PDF
-            className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg"
-          >
-            <IconFilePdf />
-            French resume
-          </a>
-        </button>
-        <button className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg">
-          <a
-            href="/enCV.pdf" // Replace with the actual path to your PDF file
-            download="ReenMARTINI-CV.pdf" // Specify the desired file name for the downloaded PDF
-            className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg"
-          >
-            <IconFilePdf />
-            English resume
-          </a>
-        </button>
+
+        {i18n.language === "fr" ? (
+          <button className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg">
+            <a
+              href="/frCV.pdf" // Replace with the actual path to your PDF file
+              download="ReenMARTINI-CV.pdf" // Specify the desired file name for the downloaded PDF
+              className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg"
+            >
+              <IconFilePdf />
+              French resume
+            </a>
+          </button>
+        ) : (
+          <button className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg">
+            <a
+              href="/enCV.pdf" // Replace with the actual path to your PDF file
+              download="ReenMARTINI-CV.pdf" // Specify the desired file name for the downloaded PDF
+              className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg"
+            >
+              <IconFilePdf />
+              English resume
+            </a>
+          </button>
+        )}
       </div>
     </div>
   );
 };
 
-export default WorkWithMe;
+export default withTranslation()(WorkWithMe);

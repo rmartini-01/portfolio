@@ -1,14 +1,17 @@
+"use client";
 import React from "react";
 import SliderComponent from "./SliderComponent";
+import { useTranslation, withTranslation } from "react-i18next";
 
 const Skills = ({ onClose, children }) => {
+  const { t, i18n } = useTranslation();
   return (
     <section
       id="Skills"
       className="text-center flex flex-col justify-between m-14"
     >
       <h2 className="text-2xl md:text-4xl font-bold font-custom text-white">
-        But that's not all !
+        {t("But that's not all !")}
       </h2>
 
       <SliderComponent />
@@ -16,4 +19,4 @@ const Skills = ({ onClose, children }) => {
   );
 };
 
-export default Skills;
+export default withTranslation()(Skills);
