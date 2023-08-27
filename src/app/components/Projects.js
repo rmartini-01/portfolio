@@ -28,7 +28,7 @@ const Projects = () => {
     },
     {
       name: "SpaceJump",
-      image: "/spacejump.png",
+      image: "/spaceJump.png",
       description: "Game inspired by Doodle Jump ",
       tech: "C - SDL2 ",
       githubLink: "https://github.com/rmartini-01/spaceJump",

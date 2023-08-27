@@ -20,7 +20,7 @@ const ProjectCard = ({ project, onDemoButtonClick  }) => {
         <Image
           className="rounded-md"
           src={project.image} 
-          alt="Description of the image"
+          alt="Project image"
           width={200} 
           height={150} 
         />
