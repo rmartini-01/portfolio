@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Modal from "./Modal";
+
 
 const ProjectCard = ({ project, onDemoButtonClick  }) => {
   const [showModal, setShowModal] = useState(false);
@@ -13,7 +13,7 @@ const ProjectCard = ({ project, onDemoButtonClick  }) => {
   const linkExists = project.githubLink !== "#";
   return (
     <div className="glassEffect rounded-lg shadow-md p-6 flex flex-col justify-between">
-      <h2 className="text-xl text-center text-purple-500 font-semibold mb-2">
+      <h2 className="text-xl text-center text-gray-200 font-semibold mb-2">
         {project.name}
       </h2>
       <div className=" flex justify-center items-center">

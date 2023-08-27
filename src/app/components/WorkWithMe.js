@@ -13,7 +13,7 @@ const handleButtonClick = () => {
 
 const WorkWithMe = () => {
   return (
-    <div className="w-full justify-between items-center mb-24  ">
+    <div id="contact" className="w-full justify-between items-center mb-24  ">
       <h2 className="text-4xl text-white text-center font-bold mt-10 m-4 font-custom">
         Work with me !
       </h2>

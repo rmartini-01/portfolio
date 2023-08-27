@@ -1,6 +1,5 @@
 "use client"; 
 import React, {useState} from "react";
-import Image from "next/image";
 import ProjectCard from "./ProjectCard";
 import Modal from "./Modal";
 import VideoBackground from "./VideoBackground";
@@ -24,7 +23,7 @@ const Projects = () => {
       name: "Recettes de cocktails",
       image: "/recettes.png",
       description: "The perfect website for your cocktails recipes!",
-      tech: "PHP - SQL - HTML - CSS -  ",
+      tech: "PHP - SQL - HTML - CSS ",
       githubLink: "https://github.com/rmartini-01/cocktails",
     },
     {
