@@ -103,7 +103,7 @@ const SliderComponent = () => {
             "Each project is a new adventure, and requires a different approche"
           )}
         </p>
-        <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 items-center">
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Agile
           </li>
