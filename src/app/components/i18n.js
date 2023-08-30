@@ -60,7 +60,7 @@ const resources = {
       "I can't share this repository, but here's a video presentation of the app :)":
         "Je ne peux pas partager ce dépôt, mais voici une vidéo de présentation de l'application :)",
       "But that's not all !": "Mais ce n'est pas tout !",
-      "I have also worked on projects using these languages:":
+      "I have also worked on projects using these languages":
         "J'ai également travaillé sur des projets utilisant ces langages ",
       "And these tools and frameworks": "Et ces outils et frameworks",
       "Sometimes I design my own projects with":
