@@ -59,7 +59,7 @@ const resources = {
         "Ceci est un aperçu de certains des projets que j'ai réalisés pendant mes études. J'ai travaillé sur d'autres projets qui m'ont permis d'acquérir des compétences non seulement dans d'autres langages de programmation, frameworks et outils, mais aussi en méthodologie, travail d'équipe et productivité. Je travaille actuellement sur de nouveaux projets que je ne peux malheureusement pas encore partager avec vous...",
       "I can't share this repository, but here's a video presentation of the app :)":
         "Je ne peux pas partager ce dépôt, mais voici une vidéo de présentation de l'application :)",
-      "But that's not all...": "Mais ce n'est pas tout !",
+      "But that's not all...": "Mais ce n'est pas tout...",
       "I have also worked on projects using these languages":
         "J'ai également travaillé sur des projets utilisant ces langages ",
       "And these tools and frameworks": "Et ces outils et frameworks",
