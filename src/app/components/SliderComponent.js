@@ -23,11 +23,11 @@ const SliderComponent = () => {
   };
 
   return (
-    <Slider {...settings} className="w-full p-12 md:p-32 font-custom  z-20">
+    <Slider {...settings} className="w-full p-12 md:p-32 font-custom text-lg text-center z-20">
       {/* First Slide */}
-      <div className=" text-white text-left z-20 ">
+      <div className=" text-white z-20 ">
         <div className=" flex flex-col justify-between">
-          <p className="mt-4 mb-4">
+          <p className="mt-4 mb-4 text-lg text-center">
             {t("I have also worked on projects using these languages")}
           </p>
           <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -41,33 +41,42 @@ const SliderComponent = () => {
               Python
             </li>
             <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-              XML
-            </li>
-            <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
               JavaScript & TypeScript
             </li>
             <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+              jQuery
+            </li>
+            <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+              Swift
+            </li>
+            <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
               Ocaml
+            </li>
+            <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+              XML & JSON
+            </li>
+            <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+              UML
             </li>
           </ul>
         </div>
       </div>
 
       {/* Second Slide */}
-      <div className=" text-white z-20">
+      <div className=" text-white z-20 ">
         <p className="mt-4 mb-4"> {t("And these tools and frameworks")}</p>
         <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-            JetBrains
+            JetBrains & Android Studio
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Visual Studio Code
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-            Android Studio
+            XCode
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-            Laravel
+            Laravel & Slim
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             React & NextJS
@@ -78,7 +87,6 @@ const SliderComponent = () => {
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Slack & Discord
           </li>
-
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Git
           </li>
@@ -90,6 +98,35 @@ const SliderComponent = () => {
 
       {/* Third Slide */}
       <div className=" text-white z-20">
+        <p className="m-4">
+          {t(
+            "Each project is a new adventure, and requires a different approche"
+          )}
+        </p>
+        <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+            Agile
+          </li>
+          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+            Scrum
+          </li>
+          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+            Feature Driven Development
+          </li>
+          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+            Test Driven Development
+          </li>
+          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+            Rapid Application Development
+          </li>
+          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+            Continuous Integration/Continuous Delivery (CI/CD)
+          </li>
+        </ul>
+      </div>
+      {/* Forth Slide */}
+
+      <div className=" text-white z-20">
         <p className="m-4">{t("Sometimes I design my own projects with")}</p>
         <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
@@ -98,6 +135,7 @@ const SliderComponent = () => {
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Canva
           </li>
+          
         </ul>
       </div>
     </Slider>

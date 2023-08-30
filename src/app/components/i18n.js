@@ -9,8 +9,9 @@ const resources = {
       Projects: "Projects",
       Contact: "Contact",
       "Hey, I'm Reen Martini": "Hey, I'm Reen Martini",
-      "I'm about to graduate from the University of Paris Cité with a Master's degree in Computer Science - Languages & Programming.":
-        "I'm about to graduate from the University of Paris Cité with a Master's degree in Computer Science - Languages & Programming.",
+      "In my final year at the University of Paris Cité, pursuing a Master's degree in Computer Science - Languages & Programming.":
+        "In my final year at the University of Paris Cité, pursuing a Master's degree in Computer Science - Languages & Programming.",
+      "Cocktail recipes": "Cocktail recipes",
       "Work with me": "Work with me",
       Close: "Close",
       "Find your itinerary !": "Find your itinerary !",
@@ -30,8 +31,12 @@ const resources = {
       "And these tools and frameworks": "And these tools and frameworks",
       "Sometimes I design my own projects with":
         "Sometimes I design my own projects with",
-        "Send me an email": "Send me an email",
-        "Find me on LinkedIn": "Find me on LinkedIn",
+      "Send me an email": "Send me an email",
+      "Find me on LinkedIn": "Find me on LinkedIn",
+      "Each project is a new adventure, and requires a different approche":
+        "Each project is a new adventure, and requires a different approche",
+      "I am currently looking for a 4 to 6-month internship starting in April 2024.":
+        "I am currently looking for a 4 to 6-month internship starting in April 2024.",
     },
   },
   fr: {
@@ -40,8 +45,6 @@ const resources = {
       Projects: "Projets",
       Contact: "Contact",
       "Hey, I'm Reen Martini": "Salut, je suis Reen Martini",
-      "I'm about to graduate from the University of Paris Cité with a Master's degree in Computer Science - Languages & Programming.":
-        "Je suis sur le point de terminer mes études à l'Université de Paris Cité avec un master en informatique - Langages et programmation.",
       "Work with me": "Travailler avec moi",
       Close: "Fermer",
       "Find your itinerary !": "Trouvez votre itinéraire !",
@@ -50,6 +53,7 @@ const resources = {
         "Le site parfait pour vos recettes de cocktails !",
       "Game inspired by Doodle Jump ": "Jeu inspiré de Doodle Jump",
       "Money pot manager": "Gestionnaire de cagnotte",
+      "Cocktail recipes": "Recettes de cocktails",
       "Lights up": "Allumez les lumières",
       "This is a preview of some of the projects I have done during my studies. I have worked on other projects making me gain skills not only in other programming languages, frameworks and tools, but also in methodology, teamwork and productivity. I am currently working on some new projects that I unfortunately cannot share with you just yet...":
         "Ceci est un aperçu de certains des projets que j'ai réalisés pendant mes études. J'ai travaillé sur d'autres projets qui m'ont permis d'acquérir des compétences non seulement dans d'autres langages de programmation, frameworks et outils, mais aussi en méthodologie, travail d'équipe et productivité. Je travaille actuellement sur de nouveaux projets que je ne peux malheureusement pas encore partager avec vous...",
@@ -61,8 +65,15 @@ const resources = {
       "And these tools and frameworks": "Et ces outils et frameworks",
       "Sometimes I design my own projects with":
         "Parfois, je design mes propres projets avec",
-        "Send me an email": "Envoyez-moi un email",
-        "Find me on LinkedIn": "Retrouvez-moi sur LinkedIn",
+      "Send me an email": "Envoyez-moi un email",
+      "Find me on LinkedIn": "Retrouvez-moi sur LinkedIn",
+      "Each project is a new adventure, and requires a different approche":
+        "Chaque projet est une nouvelle aventure, et nécessite une approche différente",
+      "In my final year at the University of Paris Cité, pursuing a Master's degree in Computer Science - Languages & Programming.":
+        "En dernière année d'études à l'Université de Paris Cité, poursuivant un master en informatique - Langages et programmation.",
+
+      "I am currently looking for a 4 to 6-month internship starting in April 2024.":
+        "Je suis actuellement à la recherche d'un stage de 4 à 6 mois à partir d'avril 2024.",
     },
   },
 };

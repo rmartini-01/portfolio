@@ -16,7 +16,7 @@ const WorkWithMe = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div id="contact" className="w-full justify-between items-center mb-24  ">
+    <div id="contact" className="w-full justify-between items-center mb-12 bg-black pt-5 ">
       <h2 className="text-4xl text-white text-center font-bold mt-10 m-4 font-custom">
         {t("Work with me")}
       </h2>

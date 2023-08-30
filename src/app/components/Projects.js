@@ -22,7 +22,7 @@ const Projects = () => {
       githubLink: "https://github.com/rmartini-01/twisk",
     },
     {
-      name: "Recettes de cocktails",
+      name: t("Cocktail recipes"),
       image: "/recettes.png",
       description: t("The perfect website for your cocktails recipes!"),
       tech: "PHP - SQL - HTML - CSS ",
@@ -44,7 +44,7 @@ const Projects = () => {
     },
 
     {
-      name: "Energy ",
+      name: "Energy",
       image: "/energy.png",
       description: t("Lights up"),
       tech: "Java - Swing",
