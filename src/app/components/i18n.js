@@ -35,8 +35,8 @@ const resources = {
       "Find me on LinkedIn": "Find me on LinkedIn",
       "Each project is a new adventure, and requires a different approche":
         "Each project is a new adventure, and requires a different approche",
-      "I am currently looking for a 4 to 6-month internship starting in April 2024.":
-        "I am currently looking for a 4 to 6-month internship starting in April 2024.",
+      "I am passionate about learning new technologies and building software solutions. I am a quick learner and a team player.":
+        "I am passionate about learning new technologies and building software solutions. I am a quick learner and a team player.",
     },
   },
   fr: {
@@ -71,9 +71,12 @@ const resources = {
         "Chaque projet est une nouvelle aventure, et nécessite une approche différente",
       "In my final year at the University of Paris Cité, pursuing a Master's degree in Computer Science - Languages & Programming.":
         "En dernière année d'études à l'Université de Paris Cité, poursuivant un master en informatique - Langages et programmation.",
-
-      "I am currently looking for a 4 to 6-month internship starting in April 2024.":
-        "Je suis actuellement à la recherche d'un stage de 4 à 6 mois à partir d'avril 2024.",
+      "I am passionate about learning new technologies and building software solutions. I am a quick learner and a team player.":
+        "Je suis passionnée par l'apprentissage de nouvelles technologies et le développement de solutions logicielles. J'apprends et je m'adapte rapidement et j'aime le travail en équipe.",
+      Modelling: "Modélisation",
+      "All rights reserved © 2024": "Tous droits réservés © 2024",
+      "Find me on Github" : "Retrouvez-moi sur Github",
+      
     },
   },
 };

@@ -38,7 +38,7 @@ const AboutMe = () => {
 
             <p className="text-lg md:text-xl md:text-left text-center font-custom flex flex-col items-center gap-5 md:flex-row">
               {t(
-                "I am currently looking for a 4 to 6-month internship starting in April 2024."
+                "I am passionate about learning new technologies and building software solutions. I am a quick learner and a team player."
               )}
             </p>
           </div>

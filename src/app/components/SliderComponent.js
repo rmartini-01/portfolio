@@ -23,10 +23,13 @@ const SliderComponent = () => {
   };
 
   return (
-    <Slider {...settings} className="w-full p-12 md:p-32 font-custom text-lg text-center z-20">
+    <Slider
+      {...settings}
+      className="w-full p-12 md:p-32 font-custom text-lg text-center z-20"
+    >
       {/* First Slide */}
       <div className=" text-white z-20 ">
-        <div className=" flex flex-col justify-between">
+        <div className=" flex flex-col justify-between text-center">
           <p className="mt-4 mb-4 text-lg text-center">
             {t("I have also worked on projects using these languages")}
           </p>
@@ -34,12 +37,14 @@ const SliderComponent = () => {
             <li className=" glassEffect text-white py-2 px-4 rounded-lg text-center">
               Flutter
             </li>
+
             <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
               Kotlin
             </li>
             <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-              Python
+              Swift
             </li>
+
             <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
               JavaScript & TypeScript
             </li>
@@ -47,16 +52,13 @@ const SliderComponent = () => {
               jQuery
             </li>
             <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-              Swift
+              Python
             </li>
             <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
               OCaml
             </li>
             <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
               XML & JSON
-            </li>
-            <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-              UML
             </li>
           </ul>
         </div>
@@ -82,7 +84,7 @@ const SliderComponent = () => {
             React & NextJS
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-            Firebase 
+            Firebase
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Trello
@@ -92,6 +94,9 @@ const SliderComponent = () => {
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Git
+          </li>
+          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
+            UML
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Notion & Linear
@@ -106,9 +111,9 @@ const SliderComponent = () => {
             "Each project is a new adventure, and requires a different approche"
           )}
         </p>
-        <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 items-center">
-          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-            Agile & Scrum 
+        <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 items-center ">
+          <li className="glassEffect text-white py-2 px-4 rounded-lg text-center h-fill ">
+            Agile & Scrum
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Pair Programming
@@ -120,10 +125,10 @@ const SliderComponent = () => {
             Test Driven Development
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-            Rapid Application Development
+            {t("Modelling")}
           </li>
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
-            Continuous Integration/Continuous Delivery (CI/CD)
+            CI/CD
           </li>
         </ul>
       </div>
@@ -138,7 +143,6 @@ const SliderComponent = () => {
           <li className="glassEffect text-white py-2 px-4 rounded-lg text-center">
             Canva
           </li>
-          
         </ul>
       </div>
     </Slider>

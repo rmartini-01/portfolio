@@ -16,11 +16,13 @@ const WorkWithMe = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div id="contact" className="w-full justify-between items-center mb-12 bg-black pt-5 ">
+    <div
+      id="contact"
+      className="w-full justify-between items-center mb-12 bg-black pt-5 "
+    >
       <h2 className="text-4xl text-white text-center font-bold mt-10 m-4 font-custom">
         {t("Work with me")}
       </h2>
-
       <div
         id="buttons"
         className="flex md:flex-row gap-4 md:justify-center  pl-24 pr-24 pb-24 flex-col"
@@ -34,7 +36,7 @@ const WorkWithMe = () => {
         </button>
         <button className="flex gap-4 items-center bg-gray-700 font-custom hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg">
           <GithubSVG />
-          <a href="https://www.github.com/rmartini-01"> Find me on Github</a>
+          <a href="https://www.github.com/rmartini-01">  {t("Find me on Github")}</a>
         </button>
 
         <button className="flex gap-4 items-center bg-white hover:bg-gray-100 font-custom text-black font-bold py-2 px-4 rounded-lg">
@@ -52,7 +54,7 @@ const WorkWithMe = () => {
               className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg"
             >
               <IconFilePdf />
-              French resume
+              CV
             </a>
           </button>
         ) : (
@@ -63,11 +65,12 @@ const WorkWithMe = () => {
               className="flex gap-4 items-center bg-red-700 hover:bg-red-800 text-white font-custom font-bold py-2 px-4 rounded-lg"
             >
               <IconFilePdf />
-              English resume
+              Resume
             </a>
           </button>
         )}
       </div>
+      <p className="text-center">{t("All rights reserved © 2024")}</p>
     </div>
   );
 };

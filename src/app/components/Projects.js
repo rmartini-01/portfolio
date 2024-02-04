@@ -63,14 +63,13 @@ const Projects = () => {
       className="relative w-full min-h-screen bg-gray-100  font-custom p-12  md:p-24"
     >
       <div className="relative z-10 ">
-        <p className="text-lg glassEffect p-2 md:p-5  rounded-lg mb-4">
-          &#x26A0;{" "}
-          {t(
-            "This is a preview of some of the projects I have done during my studies. I have worked on other projects making me gain skills not only in other programming languages, frameworks and tools, but also in methodology, teamwork and productivity. I am currently working on some new projects that I unfortunately cannot share with you just yet..."
-          )}{" "}
-        </p>
+        <h2 className="text-4xl text-center md:text-4xl font-bold font-custom mb-10 text-white">
+          {t("Projects")}
+          
+        </h2>
+       
 
-        <div className=" realtive grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="realtive grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
@@ -94,6 +93,12 @@ const Projects = () => {
             </Modal>
           )}
         </div>
+        <p className="text-lg glassEffect p-2 md:p-5  rounded-lg mt-4">
+          {" "}
+          {t(
+            "This is a preview of some of the projects I have done during my studies. I have worked on other projects making me gain skills not only in other programming languages, frameworks and tools, but also in methodology, teamwork and productivity. I am currently working on some new projects that I unfortunately cannot share with you just yet..."
+          )}{" "}
+        </p>
       </div>
       <VideoBackground />
     </div>
