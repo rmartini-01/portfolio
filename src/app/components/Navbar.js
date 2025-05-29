@@ -6,42 +6,36 @@ import i18n from "./i18n";
 import { useTranslation, withTranslation } from "react-i18next";
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation();
-  const handleChangeLanguage = useCallback(() => {
-    const newLanguage = i18n.language === "en" ? "fr" : "en";
-    i18n.changeLanguage(newLanguage);
-  }, [i18n]);
+  const { t } = useTranslation();
+
   return (
-    <nav className="p-4 gradient-purple">
-      <div className="container  mx-auto flex justify-between items-center">
-        <a href="#" className="text-white text-lg font-semibold">
-          Reen Martini
-        </a>
-        <ul className="flex space-x-4">
-          <li>
-            <a href="#about-me" className="text-white hover:text-purple-500">
-              {t("About")}
-            </a>
-          </li>
-          <li>
-            <a href="#projects" className="text-white hover:text-purple-500">
-              {t("Projects")}
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="text-white hover:text-purple-500">
-              {t("Contact")}
-            </a>
-          </li>
-          <li>
-            <button
-              className="text-white hover:text-purple-500"
-              onClick={handleChangeLanguage}
-            >
-              {i18n.language === "en" ? "🇫🇷" : "🇬🇧"}
-            </button>
-          </li>
-        </ul>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md">
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex justify-between items-center">
+          <a href="#about-me" className="text-white text-xl font-bold nav-link">
+            RM
+          </a>
+          <div className="flex items-center space-x-6">
+            <a href="#about-me" className="text-white nav-link">{t("About")}</a>
+            <a href="#projects" className="text-white nav-link">{t("Projects")}</a>
+            <a href="#contact" className="text-white nav-link">{t("Contact")}</a>
+            <div className="flex items-center space-x-2 ml-4">
+              <button
+                onClick={() => i18n.changeLanguage("en")}
+                className="text-white hover:text-purple-300 transition-colors"
+              >
+                EN
+              </button>
+              <span className="text-white">|</span>
+              <button
+                onClick={() => i18n.changeLanguage("fr")}
+                className="text-white hover:text-purple-300 transition-colors"
+              >
+                FR
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   );

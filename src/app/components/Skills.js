@@ -11,7 +11,7 @@ const Skills = ({ onClose, children }) => {
       className="text-center flex flex-col justify-between  m-14"
     >
       <h2 className="text-4xl md:text-4xl font-bold font-custom text-white">
-        {t("But that's not all...")}
+        {t("Technical Expertise & Tools")}
       </h2>
 
       <SliderComponent />

@@ -1,16 +1,16 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Reen's Portfolio",
-  description: "You'll find out more about me here.",
+  title: "Reen Martini - Portfolio",
+  description: "Software Engineer Portfolio",
 };
 
 export default function RootLayout({ children }) {
-  const language = "en";
   return (
     <html lang="en">
       <head>
@@ -23,7 +23,10 @@ export default function RootLayout({ children }) {
       
       <body className={inter.className}>
         <Navbar />
-        {children}
+        <main className="pt-16">
+          {children}
+        </main>
+        <ScrollToTop />
       </body>
     </html>
   );

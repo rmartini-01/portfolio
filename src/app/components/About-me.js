@@ -17,48 +17,62 @@ const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="w-full flex flex-row justify-between p-12 md:p-24  md:flex-col"
+      className="w-full min-h-screen flex items-center justify-center p-8 md:p-12 lg:p-24 relative"
     >
-      <div className=" absolute left-10 md:left-13 top-10 md:top-14 lg:top-16">
+      <div className="absolute right-10 top-[100%] transform -translate-y-1/2">
         <WorkingIcon />
       </div>
-      {/* <div className="flex flex-col justify-center pt-40 gap-2 mt-16 z-10"> */}
-      <div className="flex flex-col gap-5 items-center  md:items-start ">
-        <div className="flex md:flex-row justify-between flex-col items-center w-full">
-          <div className="pt-40 gap-2 mt-16 z-10 ">
-            <p className="text-2xl md:text-4xl font-bold text-center md:text-left font-custom mb-2">
-              {t("Hey, I'm Reen Martini")}
-            </p>
-            <p className="text-lg md:text-xl md:text-left text-center font-custom flex flex-col items-center gap-5 md:flex-row">
-              {t(
-                "In my final year at the University of Paris Cité, pursuing a Master's degree in Computer Science - Languages & Programming."
-              )}
-              <br />
-            </p>
 
-            <p className="text-lg md:text-xl md:text-left text-center font-custom flex flex-col items-center gap-5 md:flex-row">
-              {t(
-                "I am passionate about learning new technologies and building software solutions. I am a quick learner and a team player."
-              )}
-            </p>
+      <div className="container mx-auto max-w-6xl">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          {/* Image Section */}
+          <div className="w-full md:w-1/3 flex justify-center">
+            <div className="relative w-64 h-64 md:w-80 md:h-80">
+              <Image
+                src="/me.jpg"
+                alt="Reen MARTINI"
+                fill
+                className="object-cover rounded-2xl shadow-xl"
+                style={{
+                  borderRadius: "20px",
+                }}
+              />
+            </div>
           </div>
 
-          <Image
-            src="/me.jpg" // Path to your image in the public directory
-            alt="Reen MARTINI"
-            width={250} // Desired width of the image
-            height={200} // Desired height of the image
-            style={{
-              borderRadius: "20px",
-            }} // Adjust the radius value as needed
-          />
+          {/* Content Section */}
+          <div className="w-full md:w-2/3 space-y-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-custom">
+              {t("Hey, I'm Reen Martini")}
+            </h1>
+            
+            <div className="space-y-4">
+              <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+                {t("Software Engineer at ")}
+                <a 
+                  href="https://orchestra.eu" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-purple-300 font-bold"
+                >
+                  Orchestra
+                </a>
+                {t(", where I work on innovative travel technology solutions. I focus on full-stack development with Java and React, building reliable and user-friendly applications.")}
+              </p>
+              
+              <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+                {t("I enjoy solving complex problems and learning new technologies. I'm always looking for ways to improve and grow as a developer.")}
+              </p>
+            </div>
+
+            <button
+              className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-4 rounded-xl transition-colors duration-300 transform hover:scale-105"
+              onClick={handleButtonClick}
+            >
+              {t("Work with me")}
+            </button>
+          </div>
         </div>
-        <button
-          className="bg-purple-500 w-fit p-4 rounded-xl hover:bg-purple-600 "
-          onClick={handleButtonClick}
-        >
-          {t("Work with me")}
-        </button>
       </div>
     </section>
   );

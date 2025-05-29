@@ -70,7 +70,7 @@ const WorkWithMe = () => {
           </button>
         )}
       </div>
-      <p className="text-center">{t("All rights reserved © 2024")}</p>
+      <p className="text-center">{t("All rights reserved © 2025")}</p>
     </div>
   );
 };
