@@ -19,7 +19,7 @@ const AboutMe = () => {
       id="about-me"
       className="w-full min-h-screen flex items-center justify-center p-8 md:p-12 lg:p-24 relative"
     >
-      <div className="absolute right-10 top-[100%] transform -translate-y-1/2">
+      <div className="absolute right-0 md:right-10 top-[100%] md:top-[80%] md:block hidden">
         <WorkingIcon />
       </div>
 
